@@ -1,0 +1,25 @@
+<div class="users-new-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 users-new-container">
+        <h1 class="text-center text-white">ログインはこちら</h1>
+        <%= form_for :session, url: login_path do |f| %>
+          
+          <div class="form-group">
+            <%= f.label :メールアドレス %>
+            <%= f.text_field :email, class: 'form-control' %>
+          </div>
+           <div class="form-group">
+            <%= f.label :パスワード%>
+            <%= f.password_field :password, class: 'form-control' %>
+          </div>
+
+          <%= f.submit "ログインする", class: 'btn-block' %>
+        <% end %>
+        <div class="text-center">
+        <%= link_to '会員登録はこちらから', new_user_path %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
