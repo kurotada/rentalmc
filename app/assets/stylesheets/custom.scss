@@ -1,19 +1,23 @@
 h1, h2 {
-  font-weight: 150;
+  font-weight: 100;
 }
 
-.text-dimgray {
-  color: #696969;
+.text-white {
+  color: #e6e6fa;
+}
+
+.text-black {
+  color: #000000;
 }
 
 .btn-dimgray {
-  color: #696969;
-  border: 1px solid #696969;
+  color: #fff;
+  border: 1px solid #fff;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-bottom: 10px;
   font-size: 20px;
   background-color: rgba(0,0,0,0.0);
+  margin-bottom: 15px;
 
   &:hover {
     color: #fff;
@@ -28,7 +32,7 @@ h1, h2 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #b0c4de;
+  background-color: #a9a9a9;
 }
 
 .top-hero-container {
@@ -40,29 +44,6 @@ h1, h2 {
 
   h2 {
     margin-bottom: 60px;
-  }
-}
-
-.form-control {
-  height: 45px;
-}
-
-.users-new-wrapper {
-  width: 100vw;
-  height: 100vh;
-  background-image: image-url('bg-top.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #b0c4de;
-
-  .users-new-container {
-    padding-top: 150px;
-
-    .form-group {
-      margin-bottom: 20px;
-    }
   }
 }
 
@@ -80,16 +61,18 @@ h1, h2 {
   a {
     color: #fff !important;
   }
-}
 
   .navbar-brand {
     padding: 0px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
 
   img {
     height: 40px;
-    .btn-black {
+  }
+}
+
+.btn-black {
   color: #565656;
   border: 1px solid #565656;
   padding-top: 15px;
@@ -140,5 +123,26 @@ h1, h2 {
   }
 }
 
+.form-control {
+  height: 45px;
+}
 
+.users-new-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: image-url('bg-top.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #a9a9a9;
+
+  .users-new-container {
+    padding-top: 220px;
+
+    .form-group {
+      margin-bottom: 20px;
+    }
   }
+}
+

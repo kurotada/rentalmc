@@ -81,3 +81,5 @@ gem "carrierwave"
 gem 'fog-aws'
 
 gem 'sqlite3'
+
+gem 'dotenv-rails'

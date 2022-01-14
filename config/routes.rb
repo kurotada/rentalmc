@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get 'tags/index'
   get 'users/new'
   get 'pages/index'
+  get 'homes/index'
+  get 'menus/index'
+  get 'search' => 'homes#search'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'pages#index'
   get 'pages/help'

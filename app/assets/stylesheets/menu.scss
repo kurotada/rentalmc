@@ -1,18 +1,10 @@
-.users-new-wrapper {
+.top-hero-wrapper {
   width: 100vw;
   height: 100vh;
   background-image: image-url('bg-top.png');
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #a9a9a9;
-
-  .users-new-container {
-    padding-top: 220px;
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-  }
 }
