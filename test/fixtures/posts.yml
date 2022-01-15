@@ -4,10 +4,8 @@ one:
   user_id: 1
   description: MyString
   image: MyString
-  price: 1
 
 two:
   user_id: 1
   description: MyString
   image: MyString
-  price: 1

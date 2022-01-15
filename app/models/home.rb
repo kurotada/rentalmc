@@ -1,7 +1,7 @@
 class Home < ApplicationRecord
   
-def self.search(keyword)
+ def self.search(keyword)
   where(["title like? OR body like?", "%#{keyword}%", "%#{keyword}%"])
-end
+ end
 
 end
