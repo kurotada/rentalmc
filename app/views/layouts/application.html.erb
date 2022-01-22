@@ -25,7 +25,7 @@
       <div class="container">
         <% if logged_in? %><%#ログインしてたら%>
         <li>
-          <%= link_to root_path do %>
+          <%= link_to homes_index_path do %>
          　 <span><%= image_tag "icons/logo.png", class: "navbar-brand" %></span>
         　<% end %>
         </li>　
@@ -45,7 +45,7 @@
               <% end %>
             </li>
             <li>
-              <%= link_to new_topic_path do %>
+              <%= link_to new_post_path do %>
                 <%= image_tag "icons/camera.png" %>
               <% end %>
             </li>

@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get 'pages/index'
   get 'homes/index'
   get 'menus/index'
+  get 'menus/term'
+  get 'menus/question'
+  get 'menus/registation'
   get 'search' => 'homes#search'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'pages#index'
