@@ -2,6 +2,8 @@ h1, h2 {
   font-weight: 100;
 }
 
+
+
 .text-white {
   color: #e6e6fa;
 }
@@ -48,6 +50,7 @@ h1, h2 {
 }
 
 
+
 .alert {
   margin-bottom: 0px;
   position: fixed;
@@ -64,7 +67,7 @@ h1, h2 {
 
   .navbar-brand {
     padding: 0px;
-    margin-top: 20px;
+   margin-top: 20px;
   }
 
   img {
@@ -127,22 +130,22 @@ h1, h2 {
   height: 45px;
 }
 
-.users-new-wrapper {
-  width: 100vw;
-  height: 100vh;
-  background-image: image-url('bg-top.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #a9a9a9;
+// .users-new-wrapper {
+//   // width: 100vw;
+//   // height: 100vh;
+//   // background-image: image-url('bg-top.png');
+//   // background-position: center center;
+//   // background-repeat: no-repeat;
+//   // background-attachment: fixed;
+//   // background-size: cover;
+//   // background-color: #a9a9a9;
 
-  .users-new-container {
-    padding-top: 220px;
+//   .users-new-container {
+//     padding-top: 220px;
 
-    .form-group {
-      margin-bottom: 20px;
-    }
-  }
-}
+//     .form-group {
+//       margin-bottom: 20px;
+//     }
+//   }
+// }
 

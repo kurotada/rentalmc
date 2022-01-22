@@ -1,70 +1,21 @@
 <div class="users-new-wrapper">
   <div class="container">
       <div class="col-md-offset-4 col-md-4 users-new-container">
-       
-       <div id='map'></div>
+       <h1>gmap</h1>
+    <div class='map'></div>
 
 
-<script>
-　　　let map
-
- 　　　const display = document.getElementById('display')
-
-　　　function initMap(){
-
-　　　　// 位置情報を取得する
-  　　　navigator.geolocation.getCurrentPosition(function (position) {
-  　　　  LatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-
-　　　　// 取得した位置情報を中心に表示
-　　　   map = new google.maps.Map(document.getElementById('map'), {
-        center: LatLng,
-        zoom: 15
+    <script>
+     function initMap(){
+      let map = new google.maps.Map(document.getElementById('map'), {
+       center: {lat: -34.397, lng: 150.644},
+      zoom: 8
       });
+     }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"asyncdefer></script>
 
-　　　　// マーカーを立てる
-   　　　   var marker = new google.maps.Marker({
-    　　　          map : map,         
-              position : LatLng   
-            });
-    });
-}
-</script>
-
-<script　src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzZZ1PH4RTO9ngdrvq3TsHORm0XNdZ_ZM<%= ENV['GOOGLE_MAP_API_KEY'] %>&callback=initMap"async defer>
-</script>
-       
-       
-       
-       
-       
-        <div class="search-form"＞
-        <h1>検索する</h1>
-　　  　<%= form_with url: search_path, method: :get, local: true do |f| %>
- 　　　　   <%= f.text_field :keyword, value: @keyword%>
- 　　　　   <%= f.submit "検索" %>
-　　　　<% end %>
-　　　　</div>
-　　　　
-　　　　<div class="home-list">
-         <% @homes.each do |home| %>
-         <%= home.title %>
-  　　　　　　<% end %>
-　　　　</div>
-　　　
-        <%#div class="slider">
-        <% @randams.each do |randam| %>
-        <%#= link_to image_tag(home.image), home_path(home.id), method: :get, class: :slick_image %>
-       <%# end %>
-       <%#/div><%>
-       
-       
-       
-       
-       
-       
-       
-       
+     
        
     </div>
   </div>
