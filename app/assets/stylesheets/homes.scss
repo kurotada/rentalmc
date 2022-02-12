@@ -11,26 +11,22 @@ h1, h2 {
 }
 
 
-.map{
-    height: 100px;
-    width: 1000px;
-}
-
 .users-new-wrapper {
-  width: 115vw;
+  width: 100vw;
   height: 100vh;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #dcdddd;
 
-  .users-new-container {
-    padding-top: 220px;
+  .users-new-container-home {
+    padding-top: 70px;
 
     .form-group {
       margin-bottom: 20px;
     }
   }
 }
+
 

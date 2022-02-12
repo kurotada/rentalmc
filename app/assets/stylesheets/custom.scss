@@ -1,50 +1,7 @@
 
 
 
-// .text-white {
-//   color: #e6e6fa;
-// }
 
-// .text-black {
-//   color: #000000;
-// }
-
-// .btn-dimgray {
-//   color: #fff;
-//   border: 1px solid #fff;
-//   padding-top: 15px;
-//   padding-bottom: 15px;
-//   font-size: 20px;
-//   background-color: rgba(0,0,0,0.0);
-//   margin-bottom: 15px;
-
-//   &:hover {
-//     color: #fff;
-//   }
-// }
-
-// .top-hero-wrapper {
-//   width: 100vw;
-//   height: 100vh;
-//   background-image: image-url('bg-top.png');
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-attachment: fixed;
-//   background-size: cover;
-//   background-color: #a9a9a9;
-// }
-
-// .top-hero-container {
-//   padding-top: 220px;
-//   h1 {
-//     font-size: 56px;
-//     margin-bottom: 20px;
-//   }
-
-//   h2 {
-//     margin-bottom: 60px;
-//   }
-// }
 
 
 
@@ -52,7 +9,7 @@
   margin-bottom: 0px;
   position: fixed;
   width: 100%;
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .navbar-transparent {
@@ -163,6 +120,8 @@
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
 }
+
+
 
 
 

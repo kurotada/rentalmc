@@ -1,7 +1,7 @@
-<div class="users-new-wrapper">
-  <div class="container">
+<div class="top-hero-wrapper text-center">
+  <div class="container top-hero-container">
     <div class="row">
-      <div class="col-md-offset-4 col-md-4 users-new-container">
+      <div class="col-md-offset-4 col-md-4">
         <h1 class="text-center">ログインはこちら</h1>
         <%= form_for :session, url: login_path do |f| %>
           
@@ -14,7 +14,7 @@
             <%= f.password_field :password, class: 'form-control' %>
           </div>
 
-          <%= f.submit "ログインする", class: 'btn-block' %>
+          <%= f.submit "ログインする", class: 'btn btn-primary' %>
         <% end %>
         <div class="text-center">
         <%= link_to '会員登録はこちらから', new_user_path %>

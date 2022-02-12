@@ -1,11 +1,13 @@
 class HomesController < ApplicationController
  def index
-  @homes = Home.search(params[:keyword])
-  @keyword = params[:keyword]
+  
+  @title = "バイクを検索する"
  
+  @url ="https://maps.googleapis.com/maps/api/js?key="+ENV['GOOGLE_MAP_API']+"&callback=initMap"
   
-  
-  @randams = Home.order("RAND()").limit(5)
-   render "index"
+ 
+ 
+   
+ 
  end
 end
